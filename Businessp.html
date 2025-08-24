@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Business Page - Lesotho Farmers Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0a9b0a, #067306);
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    nav {
+      background-color: #031c1b;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .heading {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .product-card {
+      background: rgb(227, 229, 236);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-info h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #0a9b0a;
+    }
+
+    .product-info p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 16px;
+      color: #e63946;
+      margin-top: 10px;
+    }
+
+    .product-info a {
+      display: inline-block;
+      margin-top: 12px;
+      text-decoration: none;
+      color: white;
+      background: #0a9b0a;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+     footer {
+      margin-top: 50px;
+      background: #181a23;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .search-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px auto;
+      max-width: 600px;
+      background: rgb(255, 255, 255, 0.9);
+      border-radius: 25px;
+      padding: 5px 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .search-input {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 10px 15px;
+      border-radius: 25px;
+      font-size: 16px;
+    }
+
+    .search-btn {
+      background: rgb(8, 9, 15);
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      margin-left: 10px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 3px;
+  }
+
+  .search-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+  .bann {
+      position: relative;
+      height: 300px;
+      background: url("farm.jpg") no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      background: url(hert.webp);
+    }
+
+    .bann::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    header{
+      background-color: rgb(10, 184, 10);
+      text-align:center;
+      padding: 4px;
+      color:aliceblue;
+      display: flex;             
+      align-items: center;      
+      justify-content: center; 
+      gap: 15px; 
+     }          
+               
+    .bann-content {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+      padding: 20px;
+    }
+    header img.logo {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+    }
+   
+    .banner-content h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    @media screen and (max-width: 500px) {
+      .product-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+      height: 35px ;
+    }
+      .product-card img {
+        height: 150px;
+      }
+      .product-info h3 {
+        font-size: 16px;
+      }
+      .product-info p {
+        font-size: 13px;
+      }
+      .search-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .search-btn {
+      width: 100%;
+      margin-left: 0;
+    }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logg.jpg" height="5px" width="5px" class="logo"> 
+    <div class="title">
+    <h1>Lesotho Farmers Hub</h1>
+    <p>Marketplace - Buy Fresh from Local Farmers</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="market.html">Business</a>
+    <a href="AboutUS.html">About Us</a>
+    <a href="contactusp.html">Contact Us</a>
+    <a href="tips.html">Tips</a>
+  </nav>
+
+   <div class="bann">
+    <div class="bann-content">
+  <div class="heading">
+    <h2>Our Products</h2>
+    <p>Browse fresh, organic products directly from farmers across Lesotho</p>
+  </div>
+
+  <div class="search-container">
+  <input type="text" placeholder="Search farmers, products..." class="search-input">
+  <button type="submit" class="search-btn">Search</button>
+</div>
+</div>
+</div>
+
+  <div class="product-grid">
+  
+    <div class="product-card">
+      <img src="beef.webp" alt="Beef">
+      <div class="product-info">
+        <h3>Fresh Beef</h3>
+        <p>Farmer: Thabo Mokoena</p>
+        <p>Category: Livestock</p>
+        <p class="price">M95.00 / kg</p>
+        <a href="#">View Farmer</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="maize.jpg" alt="Maize">
+      <div class="product-info">
+        <h3>Organic Maize</h3>
+        <p>Farmer: Lineo Seboka</p>
+        <p>Category: Crop Farming</p>
+        <p class="price">M40.00 / 20kg bag</p>
+        <a href="#">View Farmer</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="milk.jpg" alt="Milk">
+      <div class="product-info">
+        <h3>Fresh Dairy Milk</h3>
+        <p>Farmer: Palesa Khabo</p>
+        <p>Category: Dairy</p>
+        <p class="price">M12.00 / litre</p>
+        <a href="#">View Farmer</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="eggs.jpg" alt="Eggs">
+      <div class="product-info">
+        <h3>Free-range Eggs</h3>
+        <p>Farmer: Sello Leboela</p>
+        <p>Category: Poultry</p>
+        <p class="price">M45.00 / tray (30 eggs)</p>
+        <a href="#">View Farmer</a>
+      </div>
+    </div>
+
+     <div class="product-card">
+      <img src="mozz.jpg" alt="Cheese">
+      <div class="product-info">
+        <h3>Mozzarela Cheese</h3>
+        <p>Farmer: Ntho Ntho</p>
+        <p>Category: Dairy</p>
+        <p class="price">M60.00 /Kg</p>
+        <a href="#">View Farmer</a>
+      </div>
+      </div>
+
+       <div class="product-card">
+      <img src="pork.jpg" alt="pork">
+      <div class="product-info">
+        <h3>Pork</h3>
+        <p>Farmer: Maime Farmers</p>
+        <p>Category: Livestock</p>
+        <p class="price">M55.00 / Kg</p>
+        <a href="#">View Farmer</a>
+      </div>
+      </div>
+
+       <div class="product-card">
+      <img src="honey.jpg" alt="honey">
+      <div class="product-info">
+        <h3>Organic Honey</h3>
+        <p>Farmer: Ribo Makoa</p>
+        <p>Category: Bee</p>
+        <p class="price">M90.00 /500g </p>
+        <a href="#">View Farmer</a>
+      </div> 
+    </div>
+
+       <div class="product-card">
+      <img src="spina.jpg" alt="spinach">
+      <div class="product-info">
+        <h3>Fresh Spinach</h3>
+        <p>Farmer: Khauta Crops</p>
+        <p>Category: Crop</p>
+        <p class="price">M6.00 /Kg</p>
+        <a href="#">View Farmer</a>
+      </div>
+      </div>
+
+       <div class="product-card">
+      <img src="Chick.jpg" alt="chicken">
+      <div class="product-info">
+        <h3>Chicken</h3>
+        <p>Farmer: Seitahti 'Mopa</p>
+        <p>Category: Poultry</p>
+        <p class="price">M30.00 /Kg </p>
+        <a href="#">View Farmer</a>
+      </div>
+  </div>
+
+       <div class="product-card">
+      <img src="prop.jpeg" alt="propolis">
+      <div class="product-info">
+        <h3>Bee Propolis</h3>
+        <p>Farmer: Khiba Farmland</p>
+        <p>Category: bee</p>
+        <p class="price">M30.00 500g </p>
+        <a href="#">View Farmer</a>
+      </div>
+  </div>
+
+       <div class="product-card">
+      <img src="potat.jpg" alt="potatoes">
+      <div class="product-info">
+        <h3>Potatoes</h3>
+        <p>Farmer: Paballo Jako</p>
+        <p>Category: Crop</p>
+        <p class="price">M30.00 /Kg </p>
+        <a href="#">View Farmer</a>
+      </div>
+  </div>
+
+       <div class="product-card">
+      <img src="sirl.jpg" alt="Sirloin steak">
+      <div class="product-info">
+        <h3>Sirloin Steak</h3>
+        <p>Farmer: Mphu Matsa </p>
+        <p>Category: Livestock</p>
+        <p class="price">M95.00 /Kg </p>
+        <a href="#">View Farmer</a>
+      </div>
+  </div>
+
+  </div>
+    <footer>
+    <p>&copy; 2025 Lesotho Farmers Hub | All Rights Reserved</p>
+  </footer>
+
+
+</body>
+</html>

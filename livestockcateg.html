@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Livestock Farmers - Lesotho Farmers Hub</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+    }
+
+    .farmers-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 30px;
+    }
+    
+    header{
+      background-color: rgb(10, 184, 10);
+      text-align:center;
+      padding: 4px;
+      color:aliceblue;
+      display: flex;             
+      align-items: center;      
+      justify-content: center; 
+      gap: 15px; 
+     }          
+  
+    .farmer-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .farmer-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .farmer-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .farmer-card h3 {
+      margin: 10px 0;
+      color: green;
+    }
+
+    .farmer-card p {
+      margin: 5px 0;
+      color: #555;
+    }
+      footer {
+      margin-top: 50px;
+      background: #181a23;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+     nav {
+      background-color: #031c1b;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .farmer-card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: green;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+     header img.logo {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+    }
+
+    .farmer-card a:hover {
+      background: darkgreen;
+    }
+    
+    @media screen and (max-width: 500px) {
+      .farmers-container {
+        grid-template-columns: 1fr;
+        padding: 15px;
+      }
+
+      header {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+      }
+
+      header img.logo {
+        height: 70px;
+        width: 70px;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+    }
+
+   
+    @media screen and (min-width: 501px) and (max-width: 768px) {
+      .farmers-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+      }
+
+      header img.logo {
+        height: 80px;
+        width: 80px;
+      }
+
+      nav a {
+        margin: 0 10px;
+        font-size: 14px;
+      }
+    }
+
+    
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      .farmers-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      nav a {
+        margin: 0 12px;
+        font-size: 15px;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <header >
+    <img src="logg.jpg" height="5px" width="5px" class="logo">
+    <div class="title">
+    <h2>Livestock Farmers</h2>
+    <p>Farmers specializing in Livestock farming</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Businessp.html">Business</a>
+    <a href="Aboutusp.html">About Us</a>
+    <a href="contactusp.html">Contact Us</a>
+    <a href="tipsp.html">Tips</a>
+</nav>
+
+  <div class="farmers-container">
+    
+    <div class="farmer-card">
+      <img src="li0.jpg" alt="Nte Farmland">
+      <h3>Nte Farmland</h3>
+      <p>Location: Mokhotlong</p>
+      <p>Contact: +266 5070 0004</p>
+      <a href="explore1.html">Explore Products</a>
+    </div>
+
+    <div class="farmer-card">
+      <img src="li1.jpg" alt="Khauta Livestock">
+      <h3> Khauta Livestock</h3>
+      <p>Location: Lithabaneng</p>
+      <p>Contact: +266 5630 7778</p>
+      <a href="exp.html"> Explore Products</a>
+    </div>
+     
+    <div class="farmer-card">
+      <img src="li2.webp" alt="Moorosi Farm">
+      <h3>Moorosi Farm</h3>
+      <p>Location: Maseru</p>
+      <p>Contact: +266 5091 5112</p>
+      <a href="ex1.html"> Explore Products</a>
+    </div>
+    
+     <div class="farmer-card">
+      <img src="li3.jpg" alt="Melele Farmers">
+      <h3>Melele Farmers.co</h3>
+      <p>Location: Qacha's Nek</p>
+      <p>Contact: +266 6060 1238</p>
+      <a href="ex2.html"> Explore Products</a>
+    </div>
+     
+    <div class="farmer-card">
+      <img src="li4.jpg" alt="Berea Farmland">
+      <h3>Berea Farmland</h3>
+      <p>Location: Berea</p>
+      <p>Contact: +266 6908 5099</p>
+      <a href="exp3=4.html"> Explore Products</a>
+    </div>
+
+    <div class="farmer-card">
+      <img src="li5.webp" alt="Livestock Style">
+      <h3>Livestock Style</h3>
+      <p>Location: Ha-Moit'supeli</p>
+      <p>Contact: +266 6788 5909</p>
+      <a href="ex4.html"> Explore Products</a>
+    </div>
+
+    
+    <div class="farmer-card">
+      <img src="li6.jpg" alt="Leribe Farmfeeds">
+      <h3>Leribe Farmfeeds</h3>
+      <p>Location: Leribe</p>
+      <p>Contact: +266 6421 2345</p>
+      <a href="ex6.html"> Explore Products</a>
+
+          <!-- Add more farmers here -->
+  </div>
+
+   <div class="farmer-card">
+      <img src="li7.jpg" alt="Rea FarmCo">
+      <h3>Rea FarmCo</h3>
+      <p>Location: Teyateyaneng</p>
+      <p>Contact: +266 6090 0345</p>
+      <a href="ex7.html"> Explore Products</a>
+  </div>
+  </div>
+
+   
+        <footer>
+            <p>&copy; 2025 Lesotho Farmers Hub | All Rights Reserved</p>
+        </footer>
+
+</body>
+</html>

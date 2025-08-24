@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>   Dairy Farmers - Lesotho Farmers Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+    }
+    header{
+      background-color: rgb(10, 184, 10);
+      text-align:center;
+      padding: 4px;
+      color:aliceblue;
+      display: flex;             
+      align-items: center;      
+      justify-content: center; 
+      gap: 10px; 
+    }          
+      
+    .farmers-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .farmer-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .farmer-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .farmer-card h3 {
+      margin: 10px 0;
+      color: green;
+    }
+
+    .farmer-card p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .farmer-card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: green;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .farmer-card a:hover {
+      background: darkgreen;
+    
+    }
+      nav {
+      background-color: #031c1b;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header img.logo {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    }
+    
+    footer {
+      margin-top: 50px;
+      background: #181a23;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Extra small devices (phones, less than 500px) */
+@media screen and (max-width: 500px) {
+  .farmers-container {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+  }
+
+  header img.logo {
+    height: 70px;
+    width: 70px;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+}
+
+/* Small devices (tablets, 501px - 768px) */
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  .farmers-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  header img.logo {
+    height: 80px;
+    width: 80px;
+  }
+
+  nav a {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+}
+
+/* Medium devices (small laptops, 769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .farmers-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  nav a {
+    margin: 0 12px;
+    font-size: 15px;
+  }
+}
+
+    
+
+  </style>
+</head>
+<body>
+
+  <header >
+    <img src="logg.jpg" height="5px" width="5px" class="logo"> 
+    
+    <div class="title">
+   
+    <h2>Dairy Farmers</h2>
+    <p>Farmers specializing in Dairy farming</p>
+    </div>
+  </header>
+  
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="market.html">Business</a>
+    <a href="AboutUS.html">About Us</a>
+    <a href="contactusp.html">Contact Us</a>
+    <a href="tips.html">Tips</a>
+  </nav>
+     
+
+  <div class="farmers-container">
+    
+    <div class="farmer-card">
+      <img src="da0.jpg" alt="Daily Dairy">
+      <h3>Daily Dairy</h3>
+      <p>Location: Maseru</p>
+      <p>Contact: +266 6512 1234</p>
+      <a href="contact.html">Explore Products</a>
+    </div>
+
+    <div class="farmer-card">
+      <img src="da1.webp" alt="Farmland">
+      <h3> Farmland</h3>
+      <p>Location: Maseru</p>
+      <p>Contact: +266 6000 5678</p>
+      <a href="contact.html"> Explore Products</a>
+    </div>
+     
+    <div class="farmer-card">
+      <img src="da2.jpg" alt="The dairy people">
+      <h3>The Dairy People</h3>
+      <p>Location: Berea</p>
+      <p>Contact: +266 5560 6678</p>
+      <a href="contact.html"> Explore Products</a>
+    </div>
+    
+     <div class="farmer-card">
+      <img src="da3.jpg" alt="Thatho Dairies">
+      <h3>Thatho Dairies</h3>
+      <p>Location: Leribe</p>
+      <p>Contact: +266 6220 3678</p>
+      <a href="contact.html"> Explore Products</a>
+    </div>
+     
+    <div class="farmer-card">
+      <img src="da4.jpg" alt="Letele Farmland">
+      <h3>Letele Farmeland</h3>
+      <p>Location: Roma</p>
+      <p>Contact: +266 6665 3399</p>
+      <a href="contact.html"> Explore Products</a>
+    </div>
+
+    <div class="farmer-card">
+      <img src="da5.jpg" alt="Go Dairies">
+      <h3>Go Dairies</h3>
+      <p>Location: Mokhotlong</p>
+      <p>Contact: +266 6367 5009</p>
+      <a href="contact.html"> Explore Products</a>
+    </div>
+
+    
+    <div class="farmer-card">
+      <img src="da6.webp" alt="Hi-fi Dairy">
+      <h3>Hi-fi Dairy</h3>
+      <p>Location: Qeme</p>
+      <p>Contact: +266 5944 0003</p>
+      <a href="contact.html"> Explore Products</a>
+
+  </div>
+
+   <div class="farmer-card">
+      <img src="da7.webp" alt="Teko Farmers">
+      <h3>Teko Farmers</h3>
+      <p>Location: Koro-Koro</p>
+      <p>Contact: +266 6006 8809</p>
+      <a href="contact.html"> Explore Products</a>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 Lesotho Farmers Hub | All Rights Reserved</p>
+  </footer>
+  
+
+</body>
+</html>
