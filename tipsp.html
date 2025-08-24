@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Tips - Lesotho Farmers Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+     header{
+      background-color: rgb(10, 184, 10);
+      text-align:center;
+      padding: 4px;
+      color:aliceblue;
+      display: flex;             
+      align-items: center;      
+      justify-content: center; 
+      gap: 10px; 
+    }     
+
+    
+    nav {
+      background-color: #031c1b;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .tips-hero {
+      position: relative;
+      height: 200px;
+      background: url("tow.webp") no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      margin-bottom: 40px;
+    }
+      header img.logo {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+    }
+
+    .tips-hero::before {
+      content: "";
+      position: absolute;
+      top:0; left:0; right:0; bottom:0;
+      background-color: rgba(0,0,0,0.4); 
+    }
+
+    .tips-hero h2 {
+      position: relative;
+      z-index: 1;
+      font-size: 32px;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    /* Tips Cards */
+    .tips-container {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 20px;
+    }
+
+    .tip-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .tip-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .tip-card h3 {
+      color: #0a9b0a;
+      margin-bottom: 10px;
+    }
+
+    .tip-card p {
+      color: #555;
+      line-height: 1.5;
+    }
+
+    footer {
+      background-color: #031c1b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+
+    @media (max-width: 500px) {
+      .tips-hero h2 {
+        font-size: 24px;
+      }
+       nav a{
+        display: block;
+        margin: 8px 0 ;
+       }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logg.jpg" class="logo" > 
+    <div class="title">
+    <h1>Lesotho Farmers Hub</h1>
+    <p>Your Source for Farming Success</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Businessp.html">Business</a>
+    <a href="Aboutusp.html">About Us</a>
+    <a href="contactusp.html">Contact Us</a>
+    <a href="tipsp.html">Tips</a>
+  </nav>
+
+  <div class="tips-hero">
+    <h2>Top Tips for Successful Farming</h2>
+  </div>
+
+  <div class="tips-container">
+    <div class="tip-card">
+      <h3>🌱 Crop Rotation</h3>
+      <p>Rotate your crops each season to maintain soil fertility and reduce pest problems. This keeps your land healthy and productive.</p>
+    </div>
+
+    <div class="tip-card">
+      <h3>🐄 Livestock Nutrition</h3>
+      <p>Feed your animals a balanced diet and ensure clean water. Healthy livestock produce better yields and higher-quality products.</p>
+    </div>
+
+    <div class="tip-card">
+      <h3>💡 Smart Marketing</h3>
+      <p>Promote your products online and offline. Use social media, local markets, and your network to reach more buyers effectively.</p>
+    </div>
+
+    <div class="tip-card">
+      <h3>🐝 Bee Care</h3>
+      <p>Keep your beehives clean, monitor pests, and ensure access to diverse flowers. Healthy bees give more honey and other valuable products.</p>
+    </div>
+
+    <div class="tip-card">
+      <h3>💧 Water Management</h3>
+      <p>Collect rainwater and use irrigation wisely. Proper water management ensures your crops thrive even in dry seasons.</p>
+    </div>
+
+    <div class="tip-card">
+      <h3>🛠️ Tool Maintenance</h3>
+      <p>Keep all your farming tools sharp and clean. Well-maintained equipment saves time and improves productivity.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Lesotho Farmers Hub | All Rights Reserved
+  </footer>
+
+</body>
+</html>
